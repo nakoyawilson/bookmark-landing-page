@@ -1,8 +1,184 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap");
+
+:root {
+  --font: "Rubik", sans-serif;
+  --soft-blue: hsl(231, 69%, 60%);
+  --soft-red: hsl(0, 94%, 66%);
+  --grayish-blue: hsl(229, 8%, 60%);
+  --very-dark-blue: hsl(229, 31%, 21%);
+  --off-white: hsl(0, 0%, 97%);
+  --white: hsl(0, 0%, 100%);
+  --shadow: rgba(73, 93, 207, 0.2);
+}
+
+/* CSS Reset */
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+button {
+  background: none;
+  border: 1px solid transparent;
+  font: inherit;
+}
+
+/* General Styles */
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: var(--font);
+  font-weight: 400;
+  font-size: 1.8rem;
+  text-align: center;
+  color: var(--very-dark-blue);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img,
+svg {
+  display: block;
+}
+
+/* Shared Styles */
+
+.container {
+  width: min(82.9333%, 31.1rem);
+}
+
+.paragraph {
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  opacity: 0.5;
+}
+
+.button-link {
+  background: var(--soft-blue);
+  box-shadow: 0px 8px 8px -4px var(--shadow);
+  border-radius: 5px;
+  font-weight: 500;
+  font-size: 1.4rem;
+  line-height: 2.8rem;
+  letter-spacing: 0.25px;
+  color: var(--white);
+}
+
+.button-link-alt {
+  background: var(--off-white);
+  color: var(--very-dark-blue);
+  opacity: 0.75;
+}
+
+.subheading {
+  font-weight: 500;
+  font-size: 2.4rem;
+  line-height: 5.2rem;
+  letter-spacing: -0.075px;
+}
+
+/* Header */
+
+.header {
+  margin: 4rem auto 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navigation {
+  display: none;
+}
+
+/* Hero */
+
+.hero {
+  margin: 9.4rem auto 0;
+}
+
+.main-heading {
+  font-weight: 500;
+  font-size: 3rem;
+  line-height: 4rem;
+  letter-spacing: -0.09375px;
+}
+
+.hero .paragraph {
+  margin: 1.6rem auto 3.2rem;
+}
+
+.hero .button-link {
+  padding: 1rem 1.6rem 1rem 1.7rem;
+}
+
+.hero .button-link + .button-link {
+  /* margin-left: 1.4rem; */
+}
+/* Features */
+
+.features {
+  margin: 14rem auto 0;
+}
+
+.features .paragraph {
+  margin-bottom: 1.5rem;
+}
+
+.features .button-link {
+  padding: 1rem 2.4rem;
+}
+
+/* Download */
+
+.download {
+  margin: 7.7rem auto 0;
+}
+
 /* Footer */
 
+.footer {
+  background: var(--very-dark-blue);
+  color: var(--white);
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+}
+
+.footer-link {
+  color: var(--white);
+  font-size: 1.5rem;
+  line-height: 1.7rem;
+  letter-spacing: 1.73077px;
+  text-align: right;
+  text-transform: uppercase;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+  margin: 4.8rem auto 4.3rem;
+}
+
 .attribution {
-  font-size: 11px;
-  text-align: center;
+  font-size: 1.1rem;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);

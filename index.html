@@ -17,10 +17,10 @@
     <title>Frontend Mentor | Bookmark landing page</title>
   </head>
   <body>
-    <header>
+    <header class="header container">
       <img src="images/logo-bookmark.svg" alt="Bookmark logo" class="logo" />
       <button><img src="images/icon-hamburger.svg" alt="" /></button>
-      <nav>
+      <nav class="navigation">
         <ul>
           <li><a href="#">Features</a></li>
           <li><a href="#">Pricing</a></li>
@@ -29,58 +29,64 @@
         </ul>
       </nav>
     </header>
-    <main>
-      <h1>A Simple Bookmark Manager</h1>
-      <p>
-        A clean and simple interface to organize your favourite websites. Open a
-        new browser tab and see your sites load instantly. Try it for free.
-      </p>
-      <a href="#">Get it on Chrome</a>
-      <a href="#">Get it on Firefox</a>
-      <h2>Features</h2>
-      <p>
-        Our aim is to make it quick and easy for you to access your favourite
-        websites. Your bookmarks sync between your devices so you can access
-        them on the go.
-      </p>
-      <ul>
-        <li>Simple Bookmarking</li>
-        <li>Speedy Searching</li>
-        <li>Easy Sharing</li>
-      </ul>
-      <h3>Bookmark in one click</h3>
-      <p>
-        Organize your bookmarks however you like. Our simple drag-and-drop
-        interface gives you complete control over how you manage your favourite
-        sites.
-      </p>
-      <a href="#">More Info</a>
-      <h3>Intelligent search</h3>
-      <p>
-        Our powerful search feature will help you find saved sites in no time at
-        all. No need to trawl through all of your bookmarks.
-      </p>
-      <a href="#">More Info</a>
-      <h3>Share your bookmarks</h3>
-      <p>
-        Easily share your bookmarks and collections with others. Create a
-        shareable link that you can send at the click of a button.
-      </p>
-      <a href="#">More Info</a>
-      <h2>Download the extension</h2>
-      <p>
-        We’ve got more browsers in the pipeline. Please do let us know if you’ve
-        got a favourite you’d like us to prioritize.
-      </p>
-      <h3>Add to Chrome</h3>
-      <span>Minimum version 62</span>
-      <a href="#">Add & Install Extension</a>
-      <h3>Add to Firefox</h3>
-      <span>Minimum version 55</span>
-      <a href="#">Add & Install Extension</a>
-      <h3>Add to Opera</h3>
-      <span>Minimum version 46</span>
-      <a href="#">Add & Install Extension</a>
+    <main class="main">
+      <section class="hero container">
+        <h1 class="main-heading">A Simple Bookmark Manager</h1>
+        <p class="paragraph">
+          A clean and simple interface to organize your favourite websites. Open
+          a new browser tab and see your sites load instantly. Try it for free.
+        </p>
+        <a href="#" class="button-link">Get it on Chrome</a>
+        <a href="#" class="button-link button-link-alt">Get it on Firefox</a>
+      </section>
+      <section class="features container">
+        <h2 class="subheading">Features</h2>
+        <p class="paragraph">
+          Our aim is to make it quick and easy for you to access your favourite
+          websites. Your bookmarks sync between your devices so you can access
+          them on the go.
+        </p>
+        <ul>
+          <li>Simple Bookmarking</li>
+          <li>Speedy Searching</li>
+          <li>Easy Sharing</li>
+        </ul>
+        <h3 class="subheaing">Bookmark in one click</h3>
+        <p class="paragraph">
+          Organize your bookmarks however you like. Our simple drag-and-drop
+          interface gives you complete control over how you manage your
+          favourite sites.
+        </p>
+        <a href="#" class="button-link">More Info</a>
+        <h3 class="subheading">Intelligent search</h3>
+        <p class="paragraph">
+          Our powerful search feature will help you find saved sites in no time
+          at all. No need to trawl through all of your bookmarks.
+        </p>
+        <a href="#" class="button-link">More Info</a>
+        <h3 class="subheading">Share your bookmarks</h3>
+        <p class="paragraph">
+          Easily share your bookmarks and collections with others. Create a
+          shareable link that you can send at the click of a button.
+        </p>
+        <a href="#" class="button-link">More Info</a>
+      </section>
+      <section class="download container">
+        <h2 class="subheading">Download the extension</h2>
+        <p class="paragraph">
+          We’ve got more browsers in the pipeline. Please do let us know if
+          you’ve got a favourite you’d like us to prioritize.
+        </p>
+        <h3>Add to Chrome</h3>
+        <span>Minimum version 62</span>
+        <a href="#">Add & Install Extension</a>
+        <h3>Add to Firefox</h3>
+        <span>Minimum version 55</span>
+        <a href="#">Add & Install Extension</a>
+        <h3>Add to Opera</h3>
+        <span>Minimum version 46</span>
+        <a href="#">Add & Install Extension</a>
+      </section>
       <h2>Frequently Asked Questions</h2>
       <p>
         Here are some of our FAQs. If you have any other questions you’d like
@@ -121,20 +127,20 @@
           <input
             type="email"
             id="email"
-            placeholder="nter your email address"
+            placeholder="Enter your email address"
           />
           <label for="email">Enter your email address</label>
         </form>
       </section>
     </main>
-    <footer>
+    <footer class="footer">
       <img src="images/logo-bookmark.svg" alt="Bookmark logo" class="logo" />
-      <ul>
-        <li><a href="#">Features</a></li>
-        <li><a href="#">Pricing</a></li>
-        <li><a href="#">Contact</a></li>
+      <ul class="footer-links"
+        <li><a href="#" class="footer-link">Features</a></li>
+        <li><a href="#" class="footer-link">Pricing</a></li>
+        <li><a href="#" class="footer-link">Contact</a></li>
       </ul>
-      <ul>
+      <ul class="social-icons">
         <li>
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24">
             <path
