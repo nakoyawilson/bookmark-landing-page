@@ -230,9 +230,8 @@ svg {
 }
 
 .faq-wrapper {
-  padding-bottom: 2.8rem;
   border-bottom: 1px solid var(--very-dark-blue-transparent);
-  margin-bottom: 1.2rem;
+  transition: 1s ease;
 }
 
 .faq-question {
@@ -243,16 +242,34 @@ svg {
   font-size: 1.5rem;
   line-height: 3.2rem;
   color: var(--very-dark-blue);
+  margin: 2rem 0 1.2rem;
+}
+
+.faq-question:hover {
+  cursor: pointer;
 }
 
 .faq-answer {
+  display: none;
   font-size: 1.5rem;
   line-height: 3rem;
   letter-spacing: 0.140625px;
   color: var(--very-dark-blue);
   opacity: 0.75;
   text-align: left;
-  margin-top: 2.6rem;
+  margin: 2.6rem 0 2.8rem;
+}
+
+.faq-wrapper.active .arrow-icon {
+  transform: rotate(180deg);
+}
+
+.faq-wrapper.active .arrow-icon-color {
+  stroke: var(--soft-red);
+}
+
+.faq-wrapper.active .faq-answer {
+  display: block;
 }
 
 .faq .button-link {
