@@ -6,9 +6,11 @@
   --soft-red: hsl(0, 94%, 66%);
   --grayish-blue: hsl(229, 8%, 60%);
   --very-dark-blue: hsl(229, 31%, 21%);
+  --very-dark-blue-transparent: hsla(229, 31%, 21%, 0.15);
   --off-white: hsl(0, 0%, 97%);
   --white: hsl(0, 0%, 100%);
   --shadow: rgba(73, 93, 207, 0.2);
+  --placeholder: rgba(36, 42, 69, 0.250109);
 }
 
 /* CSS Reset */
@@ -75,6 +77,7 @@ svg {
   line-height: 2.8rem;
   letter-spacing: 0.25px;
   color: var(--white);
+  display: inline-block;
 }
 
 .button-link-alt {
@@ -88,6 +91,17 @@ svg {
   font-size: 2.4rem;
   line-height: 5.2rem;
   letter-spacing: -0.075px;
+}
+
+.visually-hidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
 }
 
 /* Header */
@@ -147,17 +161,184 @@ svg {
   margin: 7.7rem auto 0;
 }
 
+.cards-container {
+  width: min(90%, 28rem);
+  margin: 4rem auto 0;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.card {
+  background: var(--white);
+  box-shadow: 0px 10px 20px -5px var(--shadow);
+  border-radius: 15px;
+  padding: 4.9rem 2.4rem 2.4rem;
+  width: 100%;
+}
+
+.browser-logo {
+  height: 10rem;
+  margin: 0 auto 3.2rem;
+}
+
+.card .subheading {
+  font-size: 2rem;
+  line-height: 2.4rem;
+  letter-spacing: 0.25px;
+}
+
+.card .paragraph {
+  margin-top: 0.6rem;
+  line-height: 2.8rem;
+  position: relative;
+}
+
+.card .paragraph::after {
+  content: "";
+  width: min(90%, 28rem);
+  border-bottom: 4px dotted var(--shadow);
+  position: absolute;
+  bottom: -3.2rem;
+  left: 0;
+  right: 0;
+  margin-inline: auto;
+}
+
+.card .button-link {
+  display: block;
+  padding: 1rem;
+  margin-top: 6rem;
+}
+
+/* FAQ */
+
+.faq {
+  margin: 14rem auto 0;
+}
+
+.faq .subheading {
+  line-height: 3rem;
+}
+
+.faq .paragraph {
+  margin-top: 1.6rem;
+}
+
+.faq-container {
+  margin-top: 6.4rem;
+}
+
+.faq-wrapper {
+  padding-bottom: 2.8rem;
+  border-bottom: 1px solid var(--very-dark-blue-transparent);
+  margin-bottom: 1.2rem;
+}
+
+.faq-question {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.5rem;
+  line-height: 3.2rem;
+  color: var(--very-dark-blue);
+}
+
+.faq-answer {
+  font-size: 1.5rem;
+  line-height: 3rem;
+  letter-spacing: 0.140625px;
+  color: var(--very-dark-blue);
+  opacity: 0.75;
+  text-align: left;
+  margin-top: 2.6rem;
+}
+
+.faq .button-link {
+  margin-top: 4.8rem;
+  padding: 1rem 2.4rem;
+}
+
+/* Call to Action */
+
+.cta {
+  margin-top: 12.3rem;
+  padding: 6rem 3.2rem;
+  background-color: var(--soft-blue);
+  color: var(--white);
+}
+
+.stats {
+  font-weight: 500;
+  font-size: 1.2rem;
+  line-height: 4rem;
+  letter-spacing: 4.61539px;
+  text-transform: uppercase;
+}
+
+.cta .subheading {
+  line-height: 2.8rem;
+}
+
+.cta-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  margin-top: 3.2rem;
+}
+
+.email-input {
+  width: 100%;
+  background: var(--white);
+  border-radius: 5px;
+  font: inherit;
+  padding: 1rem 2rem;
+  border: 1px solid transparent;
+}
+
+.email-input::placeholder {
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 2.8rem;
+  letter-spacing: 0.25px;
+  color: var(--placeholder);
+}
+
+.submit {
+  display: block;
+  padding: 1rem;
+  background: var(--soft-red);
+  box-shadow: 0px 8px 8px -4px var(--shadow);
+  border-radius: 5px;
+  font-weight: 500;
+  font-size: 1.4rem;
+  line-height: 2.8rem;
+  letter-spacing: 0.25px;
+  color: var(--white);
+}
+
 /* Footer */
 
 .footer {
   background: var(--very-dark-blue);
   color: var(--white);
+  padding-top: 4rem;
+}
+
+.footer-logo {
+  margin-inline: auto;
+}
+
+.footer-logo-text {
+  fill: var(--white);
 }
 
 .footer-links {
   display: flex;
   flex-direction: column;
   gap: 3.2rem;
+  margin-top: 3.9rem;
 }
 
 .footer-link {
