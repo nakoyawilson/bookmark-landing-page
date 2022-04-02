@@ -30,46 +30,88 @@
       </nav>
     </header>
     <main class="main">
-      <section class="hero container">
+      <section class="hero">
+        <div class="hero-image-wrapper">
+          <img src="images/illustration-hero.svg" alt="" class="hero-image" />
+        </div>
         <h1 class="main-heading">A Simple Bookmark Manager</h1>
-        <p class="paragraph">
+        <p class="paragraph container">
           A clean and simple interface to organize your favourite websites. Open
           a new browser tab and see your sites load instantly. Try it for free.
         </p>
         <a href="#" class="button-link">Get it on Chrome</a>
         <a href="#" class="button-link button-link-alt">Get it on Firefox</a>
       </section>
-      <section class="features container">
+      <section class="features">
         <h2 class="subheading">Features</h2>
-        <p class="paragraph">
+        <p class="paragraph container">
           Our aim is to make it quick and easy for you to access your favourite
           websites. Your bookmarks sync between your devices so you can access
           them on the go.
         </p>
-        <ul>
-          <li>Simple Bookmarking</li>
-          <li>Speedy Searching</li>
-          <li>Easy Sharing</li>
+        <ul class="features-wrapper container">
+          <li class="feature">
+            <button class="feature-btn active">
+              <span class="feature-text">Simple Bookmarking</span>
+            </button>
+          </li>
+          <li class="feature">
+            <button class="feature-btn">
+              <span class="feature-text">Speedy Searching</span>
+            </button>
+          </li>
+          <li class="feature">
+            <button class="feature-btn">
+              <span class="feature-text">Easy Sharing</span>
+            </button>
+          </li>
         </ul>
-        <h3 class="subheaing">Bookmark in one click</h3>
-        <p class="paragraph">
-          Organize your bookmarks however you like. Our simple drag-and-drop
-          interface gives you complete control over how you manage your
-          favourite sites.
-        </p>
-        <a href="#" class="button-link">More Info</a>
-        <h3 class="subheading">Intelligent search</h3>
-        <p class="paragraph">
-          Our powerful search feature will help you find saved sites in no time
-          at all. No need to trawl through all of your bookmarks.
-        </p>
-        <a href="#" class="button-link">More Info</a>
-        <h3 class="subheading">Share your bookmarks</h3>
-        <p class="paragraph">
-          Easily share your bookmarks and collections with others. Create a
-          shareable link that you can send at the click of a button.
-        </p>
-        <a href="#" class="button-link">More Info</a>
+        <section class="feature-tab active">
+          <div class="feature-tab-image-wrapper">
+            <img
+              src="images/illustration-features-tab-1.svg"
+              alt=""
+              class="feature-tab-image"
+            />
+          </div>
+          <h3 class="subheading">Bookmark in one click</h3>
+          <p class="paragraph container">
+            Organize your bookmarks however you like. Our simple drag-and-drop
+            interface gives you complete control over how you manage your
+            favourite sites.
+          </p>
+          <a href="#" class="button-link">More Info</a>
+        </section>
+        <section class="feature-tab">
+          <div class="feature-tab-image-wrapper">
+            <img
+              src="images/illustration-features-tab-2.svg"
+              alt=""
+              class="feature-tab-image"
+            />
+          </div>
+          <h3 class="subheading">Intelligent search</h3>
+          <p class="paragraph container">
+            Our powerful search feature will help you find saved sites in no
+            time at all. No need to trawl through all of your bookmarks.
+          </p>
+          <a href="#" class="button-link">More Info</a>
+        </section>
+        <section class="feature-tab">
+          <div class="feature-tab-image-wrapper">
+            <img
+              src="images/illustration-features-tab-3.svg"
+              alt=""
+              class="feature-tab-image"
+            />
+          </div>
+          <h3 class="subheading">Share your bookmarks</h3>
+          <p class="paragraph container">
+            Easily share your bookmarks and collections with others. Create a
+            shareable link that you can send at the click of a button.
+          </p>
+          <a href="#" class="button-link">More Info</a>
+        </section>
       </section>
       <section class="download container">
         <h2 class="subheading">Download the extension</h2>
